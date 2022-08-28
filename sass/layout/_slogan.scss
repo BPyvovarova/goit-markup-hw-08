@@ -1,0 +1,30 @@
+.slogan {
+  background-color: #2f303a;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/SloganImg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slogan__container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.slogan__title {
+  @include font(900, 26, 42, 0.06, #ffffff);
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 696px;
+  margin: 0 60px 30px 60px;
+  @include tablet {
+    margin: 0 204px 30px 204px;
+  }
+  @include desktop {
+    @include font(900, 44, 60, 0.06, #ffffff);
+    margin: 0 auto 30px auto;
+  }
+}

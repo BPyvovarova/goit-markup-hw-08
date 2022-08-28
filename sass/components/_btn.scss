@@ -1,0 +1,26 @@
+.btn {
+  font-family: inherit;
+  font-style: normal;
+  @include font(700, 16, 30, 0.06, #ffffff);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: var(--accent-color);
+  margin-top: 30px auto 0;
+  padding: 10px 32px;
+  min-width: 216px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  transition-property: backgraund border border-radius;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    border: 1px solid #188ce8;
+    border-radius: 4px;
+  }
+}
