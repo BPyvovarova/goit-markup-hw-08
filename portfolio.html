@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <a href="./index.html" class="header__logo link logo">Web<span>Studio</span></a>
         <nav class="navigation">
@@ -51,11 +51,86 @@
             +38 099 111 11 11</a
           >
         </div>
+        <button class="menu__open-btn" type="button">
+          <svg class="menu__open-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob__menu is-hidden">
+        <button class="menu__close-btn" type="button">
+          <svg class="menu__close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-mob"></use>
+          </svg>
+        </button>
+        <div class="container">
+          <div class="mob__menu-top">
+            <nav class="mob__menu-nav">
+              <ul class="mob__menu-list list">
+                <li class="mob__menu-item">
+                  <a href="./index.html" class="mob__menu-link link">Студія</a>
+                </li>
+                <li class="mob__menu-item">
+                  <a href="./portfolio.html" class="mob__menu-link link">Портфоліо</a>
+                </li>
+                <li class="mob__menu-item">
+                  <a href="" class="mob__menu-link link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob__menu-bottom">
+            <div class="connect mob__connect">
+              <a href="tel:+380991111111" class="mob__connect-tel link"> +38 099 111 11 11</a>
+              <a href="mailto:info@example.com" class="mob__connect-mail link"> info@example.com</a>
+            </div>
+            <div class="mob__menu-soc">
+              <ul class="mob__soc-list list">
+                <li class="mob__soc-item item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob__soc-link link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mob__soc-item item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob__soc-link link"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mob__soc-item item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob__soc-link link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mob__soc-item item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob__soc-link link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="portfolio">
-        <!-- <div class="container filter">
+        <div class="container filter">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="filter__list list">
             <li class="filter__item">
@@ -74,7 +149,8 @@
               <button type="button" class="filter__btn">Маркетинг</button>
             </li>
           </ul>
-        </div> -->
+        </div>
+        -->
         <div class="container portfolio">
           <ul class="portfolio__list list">
             <li class="portfolio__item">
@@ -207,7 +283,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container__footer container">
         <div class="section__contacts">
           <a href="./index.html" class="footer__logo link logo">Web<span>Studio</span></a>
@@ -284,6 +360,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

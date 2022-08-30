@@ -51,6 +51,81 @@
             +38 099 111 11 11</a
           >
         </div>
+        <button class="menu__open-btn" type="button">
+          <svg class="menu__open-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob__menu is-hidden">
+        <button class="menu__close-btn" type="button">
+          <svg class="menu__close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-mob"></use>
+          </svg>
+        </button>
+        <div class="container">
+          <div class="mob__menu-top">
+            <nav class="mob__menu-nav">
+              <ul class="mob__menu-list list">
+                <li class="mob__menu-item">
+                  <a href="./index.html" class="mob__menu-link link">Студія</a>
+                </li>
+                <li class="mob__menu-item">
+                  <a href="./portfolio.html" class="mob__menu-link link">Портфоліо</a>
+                </li>
+                <li class="mob__menu-item">
+                  <a href="" class="mob__menu-link link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob__menu-bottom">
+            <div class="connect mob__connect">
+              <a href="tel:+380991111111" class="mob__connect-tel link"> +38 099 111 11 11</a>
+              <a href="mailto:info@example.com" class="mob__connect-mail link"> info@example.com</a>
+            </div>
+            <div class="mob__menu-soc">
+              <ul class="mob__soc-list list">
+                <li class="mob__soc-item item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob__soc-link link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mob__soc-item item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob__soc-link link"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mob__soc-item item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob__soc-link link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mob__soc-item item">
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="mob__soc-link link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -413,7 +488,6 @@
         </div>
       </div>
     </footer>
-    -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
@@ -481,5 +555,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

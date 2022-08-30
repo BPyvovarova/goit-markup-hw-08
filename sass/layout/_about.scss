@@ -13,10 +13,10 @@
 .about__item {
   width: 100%;
   @include tablet {
-    max-width: 354px;
+    width: calc((100% - 30px) / 2);
   }
   @include desktop {
-    min-width: 270px;
+    width: calc((100% - 90px) / 4);
   }
 }
 .container__about-ikon {

@@ -14,8 +14,8 @@
 }
 .modal {
   padding: 40px;
-  min-height: 581px;
-  width: 528px;
+  min-height: 609px;
+  width: 100%;
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
@@ -26,11 +26,22 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
   }
+  @include mobile {
+    min-height: 609px;
+    width: 450px;
+  }
+  @include desktop {
+    min-height: 581px;
+    width: 528px;
+  }
 }
 .modal__title {
-  @include font(700, 20, 23, 0.03, #212121);
+  @include font(700, 20, 30, 0.03, #212121);
   text-align: center;
   margin-bottom: 12px;
+  @include desktop {
+    @include font(700, 20, 23, 0.03, #212121);
+  }
 }
 .modal__label {
   @include font(null, 12, 14, 0.01, #757575);
@@ -93,8 +104,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include font(null, 14, 24, 0.03, #757575);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @include font(null, 12, 14, 0.03, #757575);
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   span {
     display: flex;
     align-items: center;
@@ -111,6 +122,9 @@
     .modal__check:focus + & {
       border-color: var(--accent-color);
     }
+  }
+  @include desktop {
+    @include font(null, 14, 24, 0.03, #757575);
   }
 }
 .check__icon {

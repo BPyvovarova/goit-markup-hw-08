@@ -1,9 +1,11 @@
 .filter__list {
   display: flex;
-  justify-content: center;
   margin-bottom: 50px;
   flex-wrap: wrap;
   justify-content: start;
+  @include tablet {
+    justify-content: center;
+  }
 }
 .filter__btn {
   font-family: inherit;
