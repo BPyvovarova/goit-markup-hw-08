@@ -6,7 +6,7 @@
     url(../images/Slogan-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  // block-size: cover;
+  background-size: cover;
   @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/Slogan-mob-2x.jpg);

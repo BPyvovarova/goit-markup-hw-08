@@ -170,8 +170,11 @@
 }
 .mob__connect-tel {
   display: block;
-  @include font(500, 34, 40, 0.02, var(--accent-color));
+  @include font(500, 33, 40, 0.02, var(--accent-color));
   margin-bottom: 32px;
+  @include mobile {
+    @include font(500, 34, 40, 0.02, var(--accent-color));
+  }
 }
 .mob__soc-list {
   display: flex;
@@ -188,5 +191,8 @@
   }
 }
 .mob__soc-item .mob__soc-link {
-  @include font(500, 18, 22, 0.02, var(--accent-color));
+  @include font(500, 13, 20, 0.02, var(--accent-color));
+  @include mobile {
+    @include font(500, 18, 22, 0.02, var(--accent-color));
+  }
 }
