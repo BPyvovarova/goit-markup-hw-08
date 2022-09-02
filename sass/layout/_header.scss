@@ -16,9 +16,12 @@
   }
 }
 .header__logo {
-  margin-right: 93px;
+  margin-right: 87px;
   span {
     color: #000000;
+  }
+  @include desktop {
+    margin-right: 93px;
   }
 }
 .header-list .link.current {
@@ -41,7 +44,7 @@
   display: none;
   @include tablet {
     display: flex;
-    margin-right: 90px;
+    margin-right: 77px;
   }
 }
 .navigation__link {
@@ -60,7 +63,6 @@
 }
 .connect__mail {
   @include font(500, 14, 16, 0.02, var(--second-title-color));
-  margin-right: 50px;
   display: flex;
   align-items: center;
   transition-property: var(--transition-property);
@@ -69,6 +71,9 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @include desktop {
+    margin-right: 50px;
   }
 }
 .connect__tel {

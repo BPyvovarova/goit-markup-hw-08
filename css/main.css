@@ -402,10 +402,15 @@ section {
 }
 
 .header__logo {
-  margin-right: 93px;
+  margin-right: 87px;
 }
 .header__logo span {
   color: #000000;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .header-list .link.current {
@@ -432,7 +437,7 @@ section {
 @media screen and (min-width: 768px) {
   .navigation__list {
     display: flex;
-    margin-right: 90px;
+    margin-right: 77px;
   }
 }
 
@@ -461,7 +466,6 @@ section {
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
-  margin-right: 50px;
   display: flex;
   align-items: center;
   transition-property: var(--transition-property);
@@ -470,6 +474,11 @@ section {
 }
 .connect__mail:hover, .connect__mail:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .connect__mail {
+    margin-right: 50px;
+  }
 }
 
 .connect__tel {
@@ -799,6 +808,12 @@ section {
   color: var(--first-title-color);
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .about__title {
+    text-align: start;
+  }
 }
 
 .about__text {
@@ -844,6 +859,12 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 
 .team {
@@ -1143,13 +1164,19 @@ section {
 
 .filter__list {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   flex-wrap: wrap;
   justify-content: start;
 }
 @media screen and (min-width: 768px) {
   .filter__list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    margin-bottom: 50px;
   }
 }
 

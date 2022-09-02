@@ -1,10 +1,14 @@
 .filter__list {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   flex-wrap: wrap;
   justify-content: start;
   @include tablet {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
   }
 }
 .filter__btn {
